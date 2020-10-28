@@ -3,5 +3,17 @@
 #include"copyright.bgt"
 void main()
 {
-alert("information",copyright(input_box("Company","Please put a company here."),string_to_number(input_box("Hi","Please enter the start copyright year."))));
+string startCopyrightYear=input_box("Copyright Start Year","Please enter the year the example company will be founded.");
+string company=input_box("Company Name","Please enter the name of the company.");
+if(startCopyrightYear=="")
+{
+alert("Error","The start copyright year is blank.");
+exit();
+} //end if
+if(company=="")
+{
+alert("Error","Company name is blank.");
+exit();
 }
+alert("Copyright Test",copyright(company,string_to_number(startCopyrightYear)));
+} //end main
