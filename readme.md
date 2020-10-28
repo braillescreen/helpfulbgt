@@ -92,4 +92,4 @@ Cleans up code considerably along with the help text document.
 ## 10/28/20:
 Project is now on GitHub.
 
-You can [https://github.com/braillescreen/helpfulbgt](visit the repo.)
+You can [visit the repo here.](https://github.com/braillescreen/helpfulbgt)
