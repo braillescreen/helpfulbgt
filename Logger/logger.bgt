@@ -13,29 +13,30 @@ This also puts the date and time at the end, separated by a colen.
 If you have any questions, please feel free to contact me.
 Enjoy!
 */
+file f;
 void log(string logdir,string fn,string ltxt) {
 if(!directory_exists(logdir)) directory_create(logdir); //For best results, we make the log directory if it doesn't exist.
-file f;
+
 f.open(logdir+"/"+fn+".log","ab"); //We want to make sure we add .log to the end. We also make sure that the script can just add to the file, not erase all it's content since it's not designed to do that.
 f.write(ltxt+": "+DATE_MONTH+"-"+DATE_DAY+"-"+DATE_YEAR+", "+TIME_HOUR+":"+TIME_MINUTE+":"+TIME_SECOND+"\r\n");
 f.close;
 }
 string get_log(string logdir,string name)
 {
-f.open(logdir+"/logname+".log","rb");
+f.open(logdir+"/"+name+".log","rb");
 string d=f.read();
 f.close;
 return d;
 }
-bool clear_log(string logdir,string name,bool keep_file=false)
+void clear_log(string logdir,string name,bool keep_file=false)
 {
-if(keep_file)
+if(keep_file==true)
 {
 f.open(logdir+"/"+name+".log","wb");
-f.close(); 
-// The file still exists. However, we just cleared its content.
+f.close();
 }
-if(!keep_file)
+else
 {
 file_delete(logdir+"/"+name+".log");
+}
 }

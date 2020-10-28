@@ -110,3 +110,4 @@ Copyright now no longer has those worthless braces.
 * Project is now on GitHub. You can [visit the repo here.](https://github.com/braillescreen/helpfulbgt)
 * Adds new lines to the readme, I hope that fixes some of the formatting issues.
 * The example for copyright is actually readable now and isn't an example of me trying to show-off and confuse everyone.
+* Fixes a tun of undetected errors in the logger script.
