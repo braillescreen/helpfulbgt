@@ -56,33 +56,40 @@ If you are interested in contacting me to provide ideas, have a question or woul
 This project can also be found on GitHub. https://github.com/braillescreen/helpfulbgt
 
 If you would like to send in a quick donation, anything big or small will help! Use the following PayPal Donate link.
-[Donate](https://paypal.me/paypwilson)
+
+[Donate with PayPal](https://paypal.me/paypwilson)
 
 Thank you for using these scripts and I hope you find them "Helpful!"
 Patrick Wilson.
 
 ---
-Change Log:
-12/23/19
+
+# Change Log:
+## 12/23/19
 All of the scripts should ask if you would like to copy their results to the clipboard so you do not loo's anything on the clipboard.
 
-1/12/20:
+## 1/12/20:
 This readme is now up to date and it now documents more.
 Twitter is now apart of the information you can use to contact me in the readme.
 
-2/7/20:
+## 2/7/20:
 A few little edits to the scripts. Not much happened important.
 
-3/2/20:
+## 3/2/20:
 Copyright now no longer has those worthless braces.
 
-6/14/20:
+## 6/14/20:
 Removed some worthless bits of comments and also changed some code to make it more clean.
 Changes "Readme" to "Help" because it has a changelog.
 Grammatical fixes.
 
-7/15/20:
+## 7/15/20:
 Added a Clipboard Appender script, witch takes what is already on the clipboard and adds whatever you put there to the clipboard.
 
-10/4/20:
+## 10/4/20:
 Cleans up code considerably along with the help text document.
+
+## 10/28/20:
+Project is now on GitHub.
+
+You can [https://github.com/braillescreen/helpfulbgt](visit the repo.)
