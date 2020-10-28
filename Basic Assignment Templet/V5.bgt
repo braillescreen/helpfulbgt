@@ -1,0 +1,26 @@
+//This version adds a timer to see how long the script has been running, makes the file that will be opened just a result, and that's just about it.
+string date=DATE_MONTH+"/"+DATE_DAY+"/"+DATE_YEAR;
+timer ti;
+void main()
+{
+ti.restart();
+string fn=input_box("Name","Enter name (including the folder name) of this assignment.");
+string yn=input_box("Name","Enter you're name.");
+string p=input_box("Page","Enter the page number.");
+file f;
+string result=fn+" p "+p+".txt";
+if(file_exists(result))
+{
+alert("Error","The file already exists.");
+main();
+}
+if(fn=="" or yn=="" or p=="")
+{
+alert("Error","One of the fields are blank. Please try again.");
+main();
+}
+f.open(result,"wb");
+f.write(yn+"\r\n"+date+"\r\nPage "+p+"\r\n");
+f.close;
+alert("Success","Took "+ti.elapsed+" MS.");
+}

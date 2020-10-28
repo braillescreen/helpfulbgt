@@ -1,0 +1,11 @@
+//This version is the initial version
+void main()
+{
+string fn=input_box("Name","Enter name (including the folder name) of this assignment.");
+string yn=input_box("Name","Enter you're name.");
+file f;
+f.open(fn,"wb");
+f.write(yn+"\r\n"+DATE_MONTH+"/"+DATE_DAY+"/"+DATE_YEAR+"\r\n");
+f.close;
+alert("Success","");
+}

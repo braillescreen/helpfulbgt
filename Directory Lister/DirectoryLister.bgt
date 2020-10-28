@@ -1,0 +1,10 @@
+//This program lists directories. It is part of the Helpful set of Scripts at https://pwilson-web.com
+void main() {
+string[]stuff=find_files(input_box("Directory","Enter directory")+"/*");
+string final;
+for(uint i=0;i<stuff.length();i+=1) {
+final+=stuff[i]+"\r\n";
+}
+alert(stuff.length()+" files",final);
+if(question("Copy to clipboard","")==1) clipboard_copy_text(final);
+}

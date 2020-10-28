@@ -1,0 +1,16 @@
+//Quickly written logger configuration script. Part of the helpful set found at pwilson-web.com or the audiogames.net forum.
+void main()
+{
+if(directory_exists("logs")&&question("Remove Log Directory","Would you like to delete your logs directory?")==1) directory_delete("logs");
+int q=question("Question","When you run the test script, would you like to show the example alerts? This will modify showAlerts.txt");
+if(q==1) write("showAlerts.txt","1");
+else write("showAlerts.txt","0");
+alert("Success","Successfully completed the tasks.");
+}
+void write(string filename,string text)
+{
+file f;
+f.open(filename,"wb");
+f.write(text);
+f.close;
+}

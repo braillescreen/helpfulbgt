@@ -1,0 +1,31 @@
+//This version adds commented lines to the code.
+
+//We now initialise important needed variables that will be needed later.
+string date=DATE_MONTH+"/"+DATE_DAY+"/"+DATE_YEAR; //This simply returns the current date into a string so we can use it later.
+timer ti; //This is a simple timer that tells you how long the script has been running for at the end.
+void main() //Here is our main function!
+{ //All this does is show that this is the start of what the program will do when running through our only function.
+ti.restart(); //This is restarting our timer.
+//The following are simple boxes asking for the folder name of the assignment, you're name and the page number. If I wanted to make it in my Algebra folder, a folder would look like "KSSB/Algebra 1/Algebra". The reason we only put algebra there is because it already puts the spacing to add the page number there. We don't need to do that.
+string fn=input_box("Name","Enter name (including the folder name) of this assignment.");
+string yn=input_box("Name","Enter you're name.");
+string p=input_box("Page","Enter the page number.");
+file f;
+//This is where all the magic happens. It converts the result into one string so that we can do the following error checks and manage our file.
+string result=fn+" p "+p+".txt";
+if(file_exists(result)) //We want to make sure we are not trying to overwrite another file.
+{
+alert("Error","The file already exists.");
+main(); //Allowing us to start over.
+}
+if(fn=="" or yn=="" or p=="") //We also want to make sure none of the fields are blank, because that would make the end result weird.
+{
+alert("Error","One of the fields are blank. Please try again.");
+exit(); //We allow the user to exit the program at this point in case they want to cancel out in the end.
+}
+//We now write to our file.
+f.open(result,"wb"); f.write(yn+"\r\n"+date+"\r\nPage "+p+"\r\n"); f.close; //\r\n means to put a new line.
+//We now show our success dialogue displaying how long it took for the job to complete. After this it is simply to exit. The program could actually do without that exit line, but it's good  practice to put it there just in case something has issues.
+alert("Success","Took "+ti.elapsed+" MS.");
+exit();
+} //We are now done with everything, so we now end our function.

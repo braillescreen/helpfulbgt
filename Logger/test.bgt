@@ -1,0 +1,14 @@
+//If you would like to show the alerts on what is going on, make sure the content inside of showAlerts.txt is only the number 1. This is now configurable with my example configuration script, or you can edit it yourself.
+bool showAlerts=false;
+#include"logger.bgt"
+void main()
+{
+file f;
+f.open("showAlerts.txt","rb");
+if(f.read()=="1") showAlerts=true;
+f.close();
+log("logs","information","We are now running");
+if(showAlerts) alert("Hi","Welcome to this test script. We have logged something already, and we are going to log again.");
+log("logs","information","We are now exiting.");
+if(showAlerts) alert("Hi","We are now done with that as well, so we're now going to exit.");
+}

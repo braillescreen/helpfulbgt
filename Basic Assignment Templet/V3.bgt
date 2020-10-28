@@ -1,0 +1,13 @@
+//This version 3 adds page numbers.
+string date=DATE_MONTH+"/"+DATE_DAY+"/"+DATE_YEAR;
+void main()
+{
+string fn=input_box("Name","Enter name (including the folder name) of this assignment.");
+string yn=input_box("Name","Enter you're name.");
+string p=input_box("Page","Enter the page number.");
+file f;
+f.open(fn+" p "+p+".txt","wb");
+f.write(yn+"\r\n"+date+"\r\nPage "+p+"\r\n");
+f.close;
+alert("Success","");
+}

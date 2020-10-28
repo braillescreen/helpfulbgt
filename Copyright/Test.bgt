@@ -1,0 +1,7 @@
+//This is an example on how you would use this Copyright Function.
+//Created by Patrick Wilson <https://pwilson-web.com> (Part of the Helpful Scripts)
+#include"copyright.bgt"
+void main()
+{
+alert("information",copyright(input_box("Company","Please put a company here."),string_to_number(input_box("Hi","Please enter the start copyright year."))));
+}

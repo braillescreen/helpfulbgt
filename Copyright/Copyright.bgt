@@ -1,0 +1,19 @@
+/*
+Copyright
+Patrick Wilson
+This script has the following.
+CompanyName: The name of you're company
+StartCopyrightYear: The year you're company started.
+CurrentYear: Returns the current year.
+
+If the default year is less than the current year, it will return default year, and then return the current year separated by dashes.
+Else it will just return the current year, with you're company name at the end.
+Enjoy and please contact me if you have any questions!
+*/
+string copyright(string CompanyName,int StartCopyrightYear,int CurrentYear=DATE_YEAR)
+{
+string t;
+if(StartCopyrightYear<CurrentYear) t="Copyright "+StartCopyrightYear+"-"+CurrentYear+" "+CompanyName+".";
+else t="Copyright "+CurrentYear+" "+CompanyName+".";
+return t;
+}

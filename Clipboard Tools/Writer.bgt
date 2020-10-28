@@ -1,0 +1,7 @@
+string clp;
+void main()
+{
+clp=input_box("Writer","Enter what you would like to write on the keyboard to write on the clipboard. Haha!");
+clipboard_copy_text(clp);
+alert("Alert","Successfully copied "+clp+" to the clipboard.");
+}

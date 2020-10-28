@@ -1,0 +1,23 @@
+//Added the checks to make sure that you are for one not overwriting an already created file, and for two not leaving fields blank.
+string date=DATE_MONTH+"/"+DATE_DAY+"/"+DATE_YEAR;
+void main()
+{
+string fn=input_box("Name","Enter name (including the folder name) of this assignment.");
+string yn=input_box("Name","Enter you're name.");
+string p=input_box("Page","Enter the page number.");
+file f;
+if(file_exists(fn+" p "+p+".txt"))
+{
+alert("Error","The file already exists.");
+main();
+}
+if(fn=="" or yn=="" or p=="")
+{
+alert("Error","One of the fields are blank. Please try again.");
+main();
+}
+f.open(fn+" p "+p+".txt","wb");
+f.write(yn+"\r\n"+date+"\r\nPage "+p+"\r\n");
+f.close;
+alert("Success","");
+}

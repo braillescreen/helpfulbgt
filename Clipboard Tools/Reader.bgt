@@ -1,0 +1,15 @@
+string clp=clipboard_read_text();
+void main()
+{
+string result;
+if(clp=="") result="The clipboard contains no text at all.";
+else result="Clipboard text: "+clp;
+alert("Alert",result);
+if(question("Copy","Would you like to copy this to a file?")==1)
+{
+file f;
+f.open(random(1,1011)+".txt","wb");
+f.write(result);
+f.close;
+}
+}

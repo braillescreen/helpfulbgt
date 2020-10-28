@@ -1,0 +1,12 @@
+//This version of Basic Assignment Templet only changes the date string to a variable in case it is needed later.
+string date=DATE_MONTH+"/"+DATE_DAY+"/"+DATE_YEAR;
+void main()
+{
+string fn=input_box("Name","Enter name (including the folder name) of this assignment.");
+string yn=input_box("Name","Enter you're name.");
+file f;
+f.open(fn,"wb");
+f.write(yn+"\r\n"+date+"\r\n");
+f.close;
+alert("Success","");
+}

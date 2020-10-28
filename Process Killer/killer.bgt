@@ -1,0 +1,12 @@
+//This is a simple way to kill a running process on your computer.
+void main()
+{
+string name=input_box("Process Killer","Enter process name (not including extension)");
+if(name=="")
+{
+alert("Error","The Process field is blank.");
+exit();
+}
+run("c:/windows/system32/taskkill.exe","/f /im "+name+".exe",true,true);
+alert("Success",name+" was successfully killed.");
+}

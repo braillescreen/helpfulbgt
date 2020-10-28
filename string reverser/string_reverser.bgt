@@ -1,0 +1,4 @@
+//The cool thing about this is we do all of this in one line. If you want to do things such as find out if the string is blank, check out string_reverser2.bgt in the same folder.
+void main() {
+alert(string_reverse(input_box("Hi","Please enter what you want to reverse")),"The title of this dialogue contains what you reversed.");
+}

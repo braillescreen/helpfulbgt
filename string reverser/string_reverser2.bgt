@@ -1,0 +1,10 @@
+//This code is a better version of our main reverser.
+//Part of the "helpful" set of scripts found at pwilson-web.com.
+void main()
+{
+string w=input_box("Hi","Please enter what you would like to reverse."); //We ask the user what we want to reverse here.
+if(w=="") exit(); //We make sure that it isn't blank, if it is we exit the program.
+string final=string_reverse(w); //This is our final string, that is reversed and ready to do the following.
+alert("Hi",w+" is reversed as "+final); //Show our dialogue.
+if(question("Copy reversed string","Would you like to copy this reversed string to the clipboard?")==1) clipboard_copy_text(final); //We ask if the user wants to copy the reversed string to the clipboard.
+} //We are now ending our function and script.

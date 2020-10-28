@@ -1,0 +1,5 @@
+int i=random(0,100);
+void main() {
+alert("Hi","The number is: "+i);
+if(question("Copy","Would you like to copy this to the clipboard?")==1) clipboard_copy_text(i);
+}

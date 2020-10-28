@@ -1,0 +1,31 @@
+#include"sd.bgt" //Include it.
+//Below the settings file will be generated. First is the file name, and then the decryption key.
+savedata sd("important.data","oldsilverageball");
+//All the main function does is ask what you want to do, in the form of a question.
+void main()
+{
+sd.load(); //Load our currently saved settings.
+int q=question("Hi","Press yes to write a value, and no to check if it exists.");
+if(q==1) write();
+if(q==2) check();
+else exit();
+}
+//we want to, in this function, ask for an input box to see if the value that they write in actually exists. If it does, we tell them, or else we just exit our program.
+void check() {
+string what=input_box("Hi","Please enter what you would like to see if it exists.");
+if(sd.d.exists(what)) alert("Found","The specified value was found.");
+else alert("Not found","Specified value not found.");
+}
+void write()
+{
+string n=input_box("Write","Enter the setting name you would like to write.");
+string v=input_box("Value","Please enter the value.");
+if(n==""||v=="")
+{
+alert("Error","The fields are blank. Please try again.");
+exit();
+}
+sd.add(n,v);
+sd.save();
+alert("Success","Value added.");
+}

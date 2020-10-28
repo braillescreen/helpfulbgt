@@ -1,0 +1,12 @@
+//This is a nice and hacky way to write a quick random number generator. Like, it was written when I was about to go to bed.
+//This version also contains an error function for example perposes only.
+void main() {
+string m=input_box("Min","Please enter the starting number.");
+string mm=input_box("Max","Enter max.");
+if(!string_is_digits(m) or !string_is_digits(mm)) error("Not digits.");
+alert("Final","Number is: "+random(string_to_number(m),string_to_number(mm)));
+} //We end main and start our error function.
+void error(string t) {
+alert("Error",t);
+exit();
+}

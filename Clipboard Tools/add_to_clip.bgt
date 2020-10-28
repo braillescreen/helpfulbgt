@@ -1,0 +1,6 @@
+void main()
+{
+string what=input_box("Input","Please enter what you want to add to you're clipboard.");
+if(what=="") exit();
+clipboard_copy_text(clipboard_read_text()+what);
+}

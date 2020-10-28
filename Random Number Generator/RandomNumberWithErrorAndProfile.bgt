@@ -1,0 +1,23 @@
+/*
+Another Number Generator
+Patrick Wilson
+
+This is another random number generater provided in the helpful class.
+*/
+int randint=random(0,1000);
+tts_voice v;
+void main()
+{
+set_error_output("errors.log");
+start_profiling();
+//v.speak_wait("Hi. I'm going to ask for you're name. Enter it in the box, and I will say hello to you.");
+string n=input_box("Name","Please type you're name.");
+if(n=="")
+{
+v.speak_wait("You have a name don't you?");
+generate_profile("fail.log");
+exit();
+}
+v.speak_wait("Hello "+n+", nice to meat you! You're randomly generated number is "+randint);
+generate_profile("success.log");
+}
