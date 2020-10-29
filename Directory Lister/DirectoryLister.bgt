@@ -1,10 +1,23 @@
-//This program lists directories. It is part of the Helpful set of Scripts at https://pwilson-web.com
+/*
+This is apart of the Helpful set of scripts.
+A simple program to list directories and files in a certain folder.
+*/
 void main() {
-string[]stuff=find_files(input_box("Directory","Enter directory")+"/*");
-string final;
-for(uint i=0;i<stuff.length();i+=1) {
-final+=stuff[i]+"\r\n";
+string dir=input_box("Directory","Please enter the directory you would like to scan.");
+if(dir=="") {
+//We do not want a blank string.");
+alert("Error","The string is blank. Please try again.");
+exit();
 }
-alert(stuff.length()+" files",final);
-if(question("Copy to clipboard","")==1) clipboard_copy_text(final);
+string output; //This is where it will send all of our information about files and folders found.
+string[]files=find_files(dir+"/*");
+output+="There are "+files.length()+" file"+(files.length()!=1?"s":"")+". They are:\n";
+/*
+It got a bit messy there.
+The weird question marked statement thing checks if there is more than one file, and put an s if there it was more or less than 1. */
+for(int i=1; i<=files.length(); i++) {
+output+=files[i]+"\r\n";
+}
+alert("Output",output);
+if(question("Copy output to clipboard","Would you like to copy the output to the clipboard?")==1) clipboard_copy_text(output);
 }

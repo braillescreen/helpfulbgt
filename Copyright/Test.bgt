@@ -14,6 +14,6 @@ if(company=="")
 {
 alert("Error","Company name is blank.");
 exit();
-}
+} //end if
 alert("Copyright Test",copyright(company,string_to_number(startCopyrightYear)));
 } //end main
