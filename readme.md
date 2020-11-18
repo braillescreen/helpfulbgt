@@ -45,7 +45,7 @@ This is three scripts designed to generate random number's.
 
 * RandomNumber.bgt just generates a random number and alerts it, asking if you would like to copy it to the clipboard.
 
-* The second BGT script allows you to choose the min and max, and also adds an error function as an example.
+* The second BGT script allows you to choose the minimum and maximum, and also adds an error function as an example.
 
 * The third one is one I made for an old school project. It asks you for your name, and then generates another number. This is kind of more advanced, and is not commented at all.
 
@@ -82,7 +82,7 @@ Patrick Wilson.
 
 # Change Log:
 ## 12/23/19
-All of the scripts should ask if you would like to copy their results to the clipboard so you do not loo's anything on the clipboard.
+All of the scripts should ask if you would like to copy their results to the clipboard so you do not lose anything on the clipboard.
 
 ## 1/12/20:
 This readme is now up to date and it now documents more.
@@ -101,7 +101,7 @@ Copyright now no longer has those worthless braces.
 * Grammatical fixes.
 
 ## 7/15/20:
-* Added a Clipboard Appender script, witch takes what is already on the clipboard and adds whatever you put there to the clipboard.
+* Added a Clipboard Appender script, which takes what is already on the clipboard and adds whatever you put there to the clipboard.
 
 ## 10/4/20:
 * Cleans up code considerably along with the help text document.
@@ -111,3 +111,5 @@ Copyright now no longer has those worthless braces.
 * Adds new lines to the readme, I hope that fixes some of the formatting issues.
 * The example for copyright is actually readable now and isn't an example of me trying to show-off and confuse everyone.
 * Fixes a tun of undetected errors in the logger script.
+## 11/17/20:
+* Fixes a lot of issues with the readme.
