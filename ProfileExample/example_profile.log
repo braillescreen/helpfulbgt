@@ -1,0 +1,10 @@
+Profile Results
+
+
+Total execution time: 2862 ms
+
+Number of functions called: 3
+
+void methodExample2(): 1922 ms (67.16%)
+void methodExample1(): 495 ms (17.3%)
+void main(): 445 ms (15.55%)

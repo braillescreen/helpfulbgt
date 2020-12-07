@@ -1,0 +1,18 @@
+/*
+This is an example using a few methods that will do different things, and then generate it to a profile.
+*/
+void main() {
+start_profiling();
+alert("Hi","We are about to run a few methods.");
+methodExample1();
+generate_profile("example_profile.log");
+}
+void methodExample1() {
+int number=random(1,1000);
+alert("Hi","Number is "+number);
+methodExample2();
+}
+void methodExample2() {
+tts_voice temp_voice;
+temp_voice.speak_wait("This is a test.");
+}

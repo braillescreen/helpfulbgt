@@ -61,6 +61,9 @@ This is a simple program that allows you to reverse strings of text that it asks
 
 Well, I needed some basic little scripts that would let me do things quicker, or I was board and wanted to code something, or sometimes people wanted me to code something simple for them. This is a growing collection of these small projects, and this may be updated in the future as new scripts get added.
 
+## See Also
+[GlobalBGT](https://github.com/braillescreen/globalbgt) is a set of includes people use.
+
 ## Contact Information and Feedback
 If you are interested in contacting me to provide ideas, have a question or would like to send a quick comment in, you can use the following information.
 
