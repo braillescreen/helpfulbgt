@@ -1,0 +1,7 @@
+void main() {
+//This program will allow you to edit the contents of your clipboard.
+string clipboard=input_box("Clipboard Editor","Please edit the clipboard in this box.",clipboard_read_text());
+if(clipboard=="")
+if(question("Are you sure?","Are you sure you want to clear the clipboard?")!=1) exit();
+clipboard_copy_text(clipboard);
+}
