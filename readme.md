@@ -120,3 +120,4 @@ Copyright now no longer has those worthless braces.
 ## 1/2/21:
 * Actually fixes savedata example -- I forgot to load the settings!
 * SaveData example will now tell you what value was found if one is actually found.
+* Added a gitignore file that currently only ignores the important.data file in the savedata example.
