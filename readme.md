@@ -116,3 +116,7 @@ Copyright now no longer has those worthless braces.
 * Fixes a tun of undetected errors in the logger script.
 ## 11/17/20:
 * Fixes a lot of issues with the readme.
+
+## 1/2/21:
+* Actually fixes savedata example -- I forgot to load the settings!
+* SaveData example will now tell you what value was found if one is actually found.

@@ -13,7 +13,7 @@ else exit();
 //we want to, in this function, ask for an input box to see if the value that they write in actually exists. If it does, we tell them, or else we just exit our program.
 void check() {
 string what=input_box("Hi","Please enter what you would like to see if it exists.");
-if(sd.d.exists(what)) alert("Found","The specified value was found.");
+if(sd.d.exists(what)) alert("Found","The specified value was found. The value was: "+sd.read(what));
 else alert("Not found","Specified value not found.");
 }
 void write()
