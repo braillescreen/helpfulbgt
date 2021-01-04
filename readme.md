@@ -125,3 +125,4 @@ Patrick Wilson.
 ## 1/4/21:
 * Fixes the See Also heading to be a bit more descriptive.
 * Fixes to older change log entries.
+* Added an example for using profiling.
