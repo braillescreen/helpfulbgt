@@ -40,6 +40,9 @@ This is a program that allows you to kill a running process. It does not require
 
 Is not commented.
 
+### Profile Example.
+The profiler is designed to tell you how long a method has run while your script is running. This is a simple example on how to use it.
+
 ### Random Number Generator:
 This is three scripts designed to generate random number's.
 
