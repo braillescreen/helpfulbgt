@@ -84,19 +84,18 @@ Patrick Wilson.
 ---
 
 # Change Log:
-## 12/23/19
-All of the scripts should ask if you would like to copy their results to the clipboard so you do not lose anything on the clipboard.
+## 12/23/19:
+* All of the scripts should ask if you would like to copy their results to the clipboard so you do not lose anything on the clipboard.
 
 ## 1/12/20:
-This readme is now up to date and it now documents more.
-
-Twitter is now apart of the information you can use to contact me in the readme.
+* This readme is now up to date and it now documents more.
+* Twitter is now apart of the information you can use to contact me in the readme.
 
 ## 2/7/20:
-A few little edits to the scripts. Not much happened important.
+* A few little edits to the scripts. Not much happened important.
 
 ## 3/2/20:
-Copyright now no longer has those worthless braces.
+* Copyright now no longer has those worthless braces.
 
 ## 6/14/20:
 * Removed some worthless bits of comments and also changed some code to make it more clean.
@@ -125,3 +124,4 @@ Copyright now no longer has those worthless braces.
 
 ## 12-4-21:
 * Fixes the See Also heading to be a bit more descriptive.
+* Fixes to older change log entries.
