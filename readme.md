@@ -62,7 +62,7 @@ This is a simple program that allows you to reverse strings of text that it asks
 Well, I needed some basic little scripts that would let me do things quicker, or I was board and wanted to code something, or sometimes people wanted me to code something simple for them. This is a growing collection of these small projects, and this may be updated in the future as new scripts get added.
 
 ## See Also
-[GlobalBGT](https://github.com/braillescreen/globalbgt) is a set of includes people use.
+[GlobalBGT](https://github.com/braillescreen/globalbgt) is a global BGT script you can include that allows for some most used includes to be in one place such as readable time and date and time.
 
 ## Contact Information and Feedback
 If you are interested in contacting me to provide ideas, have a question or would like to send a quick comment in, you can use the following information.
@@ -114,6 +114,7 @@ Copyright now no longer has those worthless braces.
 * Adds new lines to the readme, I hope that fixes some of the formatting issues.
 * The example for copyright is actually readable now and isn't an example of me trying to show-off and confuse everyone.
 * Fixes a tun of undetected errors in the logger script.
+
 ## 11/17/20:
 * Fixes a lot of issues with the readme.
 
@@ -121,3 +122,6 @@ Copyright now no longer has those worthless braces.
 * Actually fixes savedata example -- I forgot to load the settings!
 * SaveData example will now tell you what value was found if one is actually found.
 * Added a gitignore file that currently only ignores the important.data file in the savedata example.
+
+## 12-4-21:
+* Fixes the See Also heading to be a bit more descriptive.
