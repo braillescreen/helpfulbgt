@@ -122,6 +122,6 @@ Patrick Wilson.
 * SaveData example will now tell you what value was found if one is actually found.
 * Added a gitignore file that currently only ignores the important.data file in the savedata example.
 
-## 12-4-21:
+## 1/4/21:
 * Fixes the See Also heading to be a bit more descriptive.
 * Fixes to older change log entries.
