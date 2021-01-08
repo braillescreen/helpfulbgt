@@ -9,13 +9,17 @@ if(dir=="") {
 alert("Error","The string is blank. Please try again.");
 exit();
 }
+if(!directory_exists(dir)) {
+alert("Error","The directory "+dir+" does not exist.");
+exit();
+}
 string output; //This is where it will send all of our information about files and folders found.
 string[]files=find_files(dir+"/*");
 output+="There are "+files.length()+" file"+(files.length()!=1?"s":"")+". They are:\n";
 /*
 It got a bit messy there.
 The weird question marked statement thing checks if there is more than one file, and put an s if there it was more or less than 1. */
-for(int i=1; i<=files.length(); i++) {
+for(int i=0; i<files.length(); i++) {
 output+=files[i]+"\r\n";
 }
 alert("Output",output);
