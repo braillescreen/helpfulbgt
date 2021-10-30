@@ -6,6 +6,7 @@ start_profiling();
 alert("Hi","We are about to run a few methods.");
 methodExample1();
 generate_profile("example_profile.log");
+alert("Okay","We have generated the profile. It is saved in example_profile.log.");
 }
 void methodExample1() {
 int number=random(1,1000);
