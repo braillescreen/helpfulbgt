@@ -4,4 +4,5 @@ string clipboard=input_box("Clipboard Editor","Please edit the clipboard in this
 if(clipboard=="")
 if(question("Are you sure?","Are you sure you want to clear the clipboard?")!=1) exit();
 clipboard_copy_text(clipboard);
+alert("Success","Successfully set the clipboard to "+clipboard);
 }
