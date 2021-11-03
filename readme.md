@@ -1,5 +1,5 @@
 # Helpful
-Patrick Wilson
+Please be aware: This project is considered abandonware. I don't code hardly at all in BGT anymore, and will not be updating this codebase much anymore accept to fix some errors and such. I will still be looking out for PR's or issues, but the project itself is no longer under active development.
 
 ## What is this?
 This is a helpful set of scripts that I made that might help you do things a bit easier. An explanation of everything in here is below.
@@ -70,19 +70,16 @@ Well, I needed some basic little scripts that would let me do things quicker, or
 ## Contact Information and Feedback
 If you are interested in contacting me to provide ideas, have a question or would like to send a quick comment in, you can use the following information.
 
-* Website: https://pwilson-web.com
-* Email: webmaster@pwilson-web.com
-* Twitter: @PWilsonWeb
+* Email: patrick@pwry.net
+* Twitter: @BrailleScreen
+* Feel free to open an issue if you have any ideas, too!
 
-This project can also be found on GitHub. https://github.com/braillescreen/helpfulbgt
+This project can also be [found on GitHub](https://github.com/braillescreen/helpfulbgt)
 
 If you would like to send in a quick donation, anything big or small will help! Use the following PayPal Donate link.
 
 [Donate with PayPal](https://paypal.me/paypwilson)
 
-Thank you for using these scripts and I hope you find them "Helpful!"
-
-Patrick Wilson.
 
 ---
 
@@ -129,3 +126,6 @@ Patrick Wilson.
 * Fixes the See Also heading to be a bit more descriptive.
 * Fixes to older change log entries.
 * Added an example for using profiling.
+
+## 2021-11-02:
+* Please ignore this changelog within this document. Look at the commit history instead from now on.
